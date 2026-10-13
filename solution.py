@@ -25,7 +25,6 @@ def cotar():
         else:
             ultimo = cotacoes[i]
 
-    # Caso os dias mais antigos da lista sejam não úteis, repete o valor mais novo ao lado
     for i in range(len(cotacoes)):
         if cotacoes[i] is None and i > 0:
             cotacoes[i] = cotacoes[i - 1]
